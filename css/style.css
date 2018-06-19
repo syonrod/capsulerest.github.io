@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+	background-color: #000000 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+nav{
+	
+	background-color: #0d5531 !important;
+	position: fixed;
+	z-index: 2;
+}
+
+div.navcontainer>nav>div>a>img{
+	width: 50px;
+	height: 50px;
+}
+
+/* Index Page start */
+
+ section.slider, section.section_menu, section.section_deals, section.section_location, section.section_orders, section.list_deals, section.list_location{
+	height: 100vh !important;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.slider>ul.slides>li{
+	height: 100vh !important;
+}
+
+section.slider>ul.slides>li>div.caption{
+		background: rgba(0, 0, 0, 0.452);
+		margin-top: 125px; 
+	}
+
+section.section_menu, section.section_location{
+	background-color: #2aa46d;
+}
+
+
+section.section_menu>div.carousel-items>h6, section.section_orders>div.carousel-items>h6, section.section_deals>div.carousel-items>h6, section.section_location>div.carousel-items>h6{
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 2em !important;
+	padding: 0.5em !important;
+}
+
+section.section_menu>div.carousel-items>ul>li, section.section_orders>div.carousel-items>ul>li, section.section_deals>div.carousel-items>ul>li, section.section_location>div.carousel-items>ul>li{
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 2em !important;
+	
+}
+
+
+section.section_menu>div.carousel-items{
+	text-align: center;
+	padding-top: 15% !important;
+}
+
+section.section_menu>div.carousel-items>a>i, section.section_orders>div.carousel-items>a>i, section.section_location>div.carousel-items>a>i, section.section_deals>div.carousel-items>a>i{
+	border-radius: 50%;
+	background-color: #186e43;
+	color: antiquewhite;
+	font-size: 7em;
+	padding: 0.5em;
+}
+
+section.section_menu>div.carousel-items>a>i:hover, section.section_orders>div.carousel-items>a>i:hover, section.section_location>div.carousel-items>a>i:hover{
+	font-size: 8em;
+	background-color: antiquewhite;
+	color: #186e43;
+	transition: background-color 900ms linear;
+}
+
+
+section.section_deals, section.section_orders{
+	background-color: #186e43;
+	
+}
+
+section.section_deals>div.carousel-items, section.section_location>div.carousel-items, section.section_orders>div.carousel-items{
+	text-align: center;
+	padding-top: 50%;
+}
+
+
+section.section_deals>div.carousel-items>a>i:hover{
+	font-size: 8em;
+	background-color: antiquewhite;
+	color: #2aa46d;
+	transition: background-color 900ms linear;
+}
+
+section.list_menu, section.list_orders{
+	background-color: #FFFFFF;
+	height: 100vh;
+}
+
+section.list_menu>ul.collapsible{
+	text-align: center;
+	margin: 0;
+	padding-top: 6em;
+}
+
+section.list_menu>ul.collapsible>a{
+	margin: 1em;
+}
+
+/* Index Page Ends */
+
+/* Deals Page start */
+
+section.list_deals, section.list_location{
+	background-color: #FFFFFF;
+	padding-top: 6em;
+	text-align: center;
+}
+
+section.list_orders{
+	height: 100%;
+	z-index: -2 !important;
+}
+
+.form-control{
+	z-index: 0 !important;
+}
+
+#success_message{ display: none;}
+
+section.list_location{
+	height: 100% !important;
+	background-color: #FFFFFF;
+	padding-top: 6em;
+}
+
+section.list_location>div.container>ul.locations{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+section.list_location>div.container>ul.locations>li>img{
+	width: 200px;
+	height: 200px;
+	margin: 1em;
+}
+
+footer.section_footer{
+	padding: 3em;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background-color:#2aa46d;
+}
+
+footer.section_footer>.menu{
+	width: 100%;
+	order: 1;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+	
+}
+
+footer.section_footer>.menu>ul.left{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	
+	
+}
+
+footer.section_footer>.menu>ul.left>li{
+	
+	text-align: center;
+	margin: 0 auto;
+}
+
+footer.section_footer>.menu>ul.left>li>a{
+
+	color: #FFFFFF;
+	
+}
+
+footer.section_footer>.name{
+	
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 2em;
+	width: 100%;
+	order: 2;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+	
+}
+
+footer.section_footer>.socialmedia{
+	
+	text-align: center;
+	color: #FFFFFF;
+	width: 100%;
+	font-size: 3em;
+	order: 3;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+}
+
+
+@media only screen and (min-width: 768px) {
+    div.navbar-collapse>ul.nav{
+	float: right;
+	
+	}
+
+	section.list_deals{
+		text-align: center;
+	}
+
+	section.list_deals>.carousel>a>img{
+		width: 300px;
+		height: 300px;
+	}
+
+	section.section_deals>.carousel-items, section.section_location>.carousel-items, section.section_orders>.carousel-items{
+		
+		padding-top: 250px !important;
+	}
+
+	section.slider>ul.slides>li>div.caption{
+		background: rgba(0, 0, 0, 0.452);
+		margin-top: 250px; 
+	}
+
+
+	footer.section_footer{
+	padding: 3em;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background-color:#2aa46d;
+}
+
+footer.section_footer>.menu{
+	width: 30%;
+	order: 1;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+	
+}
+
+footer.section_footer>.menu>ul.left{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	
+	
+}
+
+footer.section_footer>.menu>ul.left>li{
+	
+	text-align: center;
+	margin: 0 auto;
+}
+
+footer.section_footer>.menu>ul.left>li>a{
+
+	color: #FFFFFF;
+	
+}
+
+footer.section_footer>.name{
+	
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 2em;
+	width: 30%;
+	order: 2;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+	
+}
+
+footer.section_footer>.socialmedia{
+	
+	text-align: center;
+	color: #FFFFFF;
+	width: 30%;
+	font-size: 3em;
+	order: 3;
+	flex: 1 1 auto;
+	align-self: auto;
+	min-width: 0;
+	min-height: auto;
+}
+
+}
