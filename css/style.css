@@ -132,6 +132,10 @@ section.list_menu>ul.collapsible>a{
 
 /* Deals Page start */
 
+section.list_location{
+	height: 100vh;
+}
+
 section.list_deals, section.list_location{
 	background-color: #FFFFFF;
 	padding-top: 6em;
@@ -150,7 +154,7 @@ section.list_orders{
 #success_message{ display: none;}
 
 section.list_location{
-	height: 100% !important;
+	
 	background-color: #FFFFFF;
 	padding-top: 6em;
 }
